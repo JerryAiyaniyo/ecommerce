@@ -1,3 +1,5 @@
+import GetProducts from '../functions/GetProducts';
+
 import {useState, useEffect} from 'react';
 
 function GetToken(props) {
@@ -12,35 +14,40 @@ function GetToken(props) {
       fetch("https://api.kroger.com/v1/connect/oauth2/token", {
         body: "grant_type=client_credentials&scope=" + props.scope,
         headers: {
-          Authorization: "Basic Y29tZXJzZS05ZDkwZmQyYTM0ZGIwMGM5Yjg0ZTM5YzBmMjNkOWE5MjQwNjUzMzYyNzMyOTc1ODg4MTY6T1plUGp1NFVsWmRBSUlsOVRaWmhmQktTQ1ViZlFQRXphSUdFcWYwaQ==",
+          Authorization: "Basic ZS1jb21tZXJjZS1jNTliZGE4NzEyY2YwYmRiYWFjNjM4ZDQ5N2QzZjM5YjExMDA5OTA4OTQ1OTM3MzgzNzU6bEE5SDFOZGdlbjd5bkUydERWTHVQOVA3OFFFQUMwdEgyeHpGMHUzUQ==",
           "Content-Type": "application/x-www-form-urlencoded"
         },
         method: "POST"
       }).then(res => res.json())
         .then(
           (result) => {
-            setIsLoaded(true);
             setToken(result);
+            setIsLoaded(true);
           },
           // Note: it's important to handle errors here
           // instead of a catch() block so that we don't swallow
           // exceptions from actual bugs in components.
           (error) => {
-            setIsLoaded(true);
             setError(error);
+            setIsLoaded(true);
           }
         )
-    }, )
-  console.log(GetToken)
+    }, [])
+   
+    console.log(token);
+    
     if (error) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
       return <div>Loading...</div>;
-    } else {
+    } else if (token){
       return ( 
-        token.access_token
+        <GetProducts tk={token.access_token} query={"milk"}/>
       );
     }
   }
 
   export default GetToken;
+   
+
+  

@@ -1,8 +1,11 @@
-import GetProducts from '../functions/GetProducts';
 
-function Grid(props) {
+import GetToken from '../functions/GetToken';
+
+const Grid = (props) => {
     return (
-        <GetProducts query={props.query}/>
+      <div>
+        <GetToken scope={"product.compact"}/>
+      </div>
     );
   };
 

@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import Grid from './Grid';
 
-function Search() {
+const Search = () => {
   const [search, setSearch] = useState('');
 
   const handleChange = event => {
