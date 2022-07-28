@@ -93,3 +93,15 @@ scass
 
 Check the github link https://github.com/daliauv1/ecommerce
 
+### Team
+
+Adrian Suñé 
+Dalia Utani
+Jerry Aiyaniyo
+Guillem Martínez
+Alejandra Naranjo
+Gary Limon
+Simo Bernnich
+Eberth Castro
+Erick Crespin
+
