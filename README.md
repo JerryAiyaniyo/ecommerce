@@ -69,6 +69,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-#Dyllons Project
+# Dyllons Project
 
 the Dillons online supermarket project, was entrusted to the Alt-F4 team for its development, the project that was developed as a team should be a website of said supermarket, that is easy to use by users and fully functional and that is adaptable to mobile devices, thanks to the Alt-F4 team we have managed to carry out this development.
