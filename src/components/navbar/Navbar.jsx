@@ -17,9 +17,12 @@ function Navbar(cartItem) {
         <a className="navbar-brand mx-auto" href="/">
           <img src={logo} alt="Logo" width="100vw" />
         </a>
-
-
-
+        <div className="cart">
+          <Link to="/cart">
+            <FaShoppingCart className="btn-cart" />
+            <b><span className="number-cart">{cartItem.length === {} ? "" : cartItem.length}</span></b>
+          </Link>
+        </div>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <form class="form-inline mx-auto my-2 my-lg-0">
@@ -166,20 +169,12 @@ function Navbar(cartItem) {
               <Link to="/cart"><a className="nav-link" href="#">Mis pedidos</a></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Mi cuenta</a>
-            </li>
-            <li className="nav-item">
               <Link to="/support" ><a className="nav-link" href="#">Atención al cliente</a></Link>
             </li>
           </ul>
         </div>
 
-        <div className="cart">
-          <Link to="/cart">
-            <FaShoppingCart className="btn-cart" />
-            <b><span className="number-cart">{cartItem.length === {} ? "" : cartItem.length}</span></b>
-          </Link>
-        </div>
+      
 
 
       </div>
