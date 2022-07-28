@@ -16,17 +16,12 @@ function DisplayData(props) {
 
                             <div className="card-body">
                                 <h5 className="card-title">{productItems.description}</h5>
-                                <p className="card-text1">1 ud.</p>
-                                
-                                                                  
+                                <p className="card-text1">1 ud.</p>                                                                                   
                             </div>
-                        </div>
-
-                    
+                        </div>                   
                 )
             })}
     </div>
-
   )
 } 
 

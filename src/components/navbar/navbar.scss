@@ -1,6 +1,7 @@
 .navbar {
   background-color: var(--white-color);
   border-bottom: 1px solid var(--neutral-color_1);
+  
   .navbar-toggler {
     border: 0 !important;
     &:focus,
@@ -149,7 +150,6 @@
     margin-left: -10px;
   }
 }
-
 @media screen and (min-width: 993px) {
   .navbar {
     position: relative;
@@ -164,7 +164,7 @@
 }
 
 form {
-  .form-control {
+  .form-control-1 {
     display: block;
     width: 50% !important;
     padding: .375rem .75rem;

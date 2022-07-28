@@ -9,68 +9,76 @@
     align-content: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-title);
     margin-top: 5%;
     gap: 10%;
 
     .card {
-        width: 40%;
-        height: 40vh;
+        width: auto;
+        height: auto;
+        margin-bottom: 3%;
+        border: none;
         // border: 0.1vh solid rgb(249, 245, 245);
-        
+
 
         .row-img {
-            width: 100%;
-            height: 15vh;
+            width: auto;
+            height: auto;
             display: flex;
             align-self: center;
-            border: 0.1vh solid rgb(178, 178, 178);
-
-            img {
-                height: 15vh;
-                width: 100%;
-            }
+            border: 0.1vh solid var(--neutral-color_4);
+            border-radius: 3%;
         }
+
         .card-title {
             font-style: normal;
             font-weight: 400;
             font-size: 2vh;
             line-height: 2vh;
-            color: #000000;
+            color: var(--black-color);
         }
-        
+
         .card-text1 {
             font-style: normal;
             font-weight: 200;
             font-size: 1.4vh;
             line-height: 0.8vh;
-            color: #000000;
+            color: var(--black-color);
             opacity: 0.8;
         }
-        
+
         .card-text2 {
             font-style: normal;
             font-weight: 500;
             font-size: 2vh;
             line-height: 2vh;
-            color: #050505;
+            color: var(--black-color);
         }
-        
-        .a.btn {
-            background: #FFFFFF;
-            border: 0.1vh solid #CA2128;
-            box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.25);
-            border-radius: 3vh;
-            width: 15vh;
-            height: 3vh;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 1.5vh;    
-            color: #CA2128;
-            text-align: center;
+
+        .card-body {
             align-content: center;
+            .add-btn {
+                background: var(--white-color);
+                border: 0.1vh solid var(--primary-color);
+                box-shadow: 0vh 0vh 0vh var(--black-color);
+                border-radius: 3vh;
+                width: 95%;
+                height: 4vh;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5vh;
+                color: var(--primary-color);
+                text-align: center;
+
+            }
         }
-
-
     }
+}
+
+@media screen and (min-width: 1100px) {
+    .card{
+        width: 15% !important; 
+        height: 25% !important;
+    }
+    
 }

@@ -8,26 +8,26 @@ function ProductsView () {
     <div>
       <div className="product--info-box">
         <div className="container-fluid">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src={aceite} class="d-block w-100" alt="Aceite" />
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={aceite} className="d-block w-100" alt="Aceite" />
               </div>
-              <div class="carousel-item">
-                <img src={aceite} class="d-block w-100" alt="Aceite" />
+              <div className="carousel-item">
+                <img src={aceite} className="d-block w-100" alt="Aceite" />
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
           <div className="product--info">
@@ -46,46 +46,46 @@ function ProductsView () {
            <h3>Productos relacionados</h3>
             <div className="row flex-row flex-nowrap overflow-auto">
               <div className="col-10">
-                <div class="card card-block">
-                  <img src={peach} class="card-img-top" alt="Melocotón" />
-                  <div class="card-body">
-                    <h5 class="card-title">Melocotón de Cádiz</h5>
-                    <p class="card-text">Melocotón Fresco</p>
+                <div className="card card-block">
+                  <img src={peach} className="card-img-top" alt="Melocotón" />
+                  <div className="card-body">
+                    <h5 className="card-title">Melocotón de Cádiz</h5>
+                    <p className="card-text">Melocotón Fresco</p>
                     <h2><strong>19,20 €</strong> / Unidad</h2>
-                    <a href="#" class="btn btn-primary">Añadir</a>
+                    <a href="#" className="btn btn-primary">Añadir</a>
                   </div>
                 </div>
               </div>
               <div className="col-10">
-                <div class="card card-block">
-                  <img src={peach} class="card-img-top" alt="Melocotón" />
-                  <div class="card-body">
-                    <h5 class="card-title">Melocotón de Cádiz</h5>
-                    <p class="card-text">Melocotón Fresco</p>
+                <div className="card card-block">
+                  <img src={peach} className="card-img-top" alt="Melocotón" />
+                  <div className="card-body">
+                    <h5 className="card-title">Melocotón de Cádiz</h5>
+                    <p className="card-text">Melocotón Fresco</p>
                     <h2><strong>19,20 €</strong> / Unidad</h2>
-                    <a href="#" class="btn btn-primary">Añadir</a>
+                    <a href="#" className="btn btn-primary">Añadir</a>
                   </div>
                 </div>
               </div>
               <div className="col-10">
-                <div class="card card-block">
-                  <img src={peach} class="card-img-top" alt="Melocotón" />
-                  <div class="card-body">
-                    <h5 class="card-title">Melocotón de Cádiz</h5>
-                    <p class="card-text">Melocotón Fresco</p>
+                <div className="card card-block">
+                  <img src={peach} className="card-img-top" alt="Melocotón" />
+                  <div className="card-body">
+                    <h5 className="card-title">Melocotón de Cádiz</h5>
+                    <p className="card-text">Melocotón Fresco</p>
                     <h2><strong>19,20 €</strong> / Unidad</h2>
-                    <a href="#" class="btn btn-primary">Añadir</a>
+                    <a href="#" className="btn btn-primary">Añadir</a>
                   </div>
                 </div>
               </div>
               <div className="col-10">
-                <div class="card card-block">
-                  <img src={peach} class="card-img-top" alt="Melocotón" />
-                  <div class="card-body">
-                    <h5 class="card-title">Melocotón de Cádiz</h5>
-                    <p class="card-text">Melocotón Fresco</p>
+                <div className="card card-block">
+                  <img src={peach} className="card-img-top" alt="Melocotón" />
+                  <div className="card-body">
+                    <h5 className="card-title">Melocotón de Cádiz</h5>
+                    <p className="card-text">Melocotón Fresco</p>
                     <h2><strong>19,20 €</strong> / Unidad</h2>
-                    <a href="#" class="btn btn-primary">Añadir</a>
+                    <a href="#" className="btn btn-primary">Añadir</a>
                   </div>
                 </div>
               </div>

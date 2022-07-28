@@ -18,6 +18,7 @@ function Cart({ cartItem, addToCart, decreaseQty }) {
                 <span>Envío a CP. 08035</span>
                 <span><b>Productos agregados</b></span>
                 
+                
             </div>
                     
                     {cartItem.length === {} && <h3 className="no-items product">No hay productos en el carrito</h3>}

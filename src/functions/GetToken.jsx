@@ -42,7 +42,7 @@ function GetToken(props) {
       return <div>Loading...</div>;
     } else if (token){
       return ( 
-        <GetProducts tk={token.access_token} query={"milk"}/>
+        <GetProducts tk={token.access_token} query={props.category} />
       );
     }
   }
