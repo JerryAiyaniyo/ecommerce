@@ -88,3 +88,8 @@ React
 Javascript
 Bootstrap
 scass
+
+### For more information 
+
+Check the github link https://github.com/daliauv1/ecommerce
+
