@@ -1,53 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import '../products/products.scss';
+import React, { useContext } from "react";
+import CartContext from "../../context/CartContext";
+import styles from "./styles.module.scss";
+import { ProductsData } from "../../data/Data";
 
-function Products() {
-
-    let giveMeAccessKey = async() => {
-
-        let res = await fetch('https://api.kroger.com/v1/connect/oauth2/token', {
-            method: 'POST', // or 'PUT'
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Authorization': 'Basic ' + 'bmV3cGlucG9uLTZkNjdkOGNiNTRjZTdmMmVhN2ZlMTg4MDUzMDMzNzI1MzU5NDA5MzcyODg1MjY5NjgzNjpzYlhnakVQNjRXUTlDX2JNOVMybjhYUDV2YmFZRWxIekFCNEJXOGRm'
-            },
-            body: "grant_type=client_credentials&scope=product.compact",
-        })
-        .then(response => response.json())
-        console.log(res)
-            // .then(data => {
-            //     console.log('Success:', data);
-            // })
-            // .catch((error) => {
-            //     console.error('Error:', error);
-            // });
-            return res.access_token;
-        }
-    giveMeAccessKey();
-
-// in process
-    // let getProducts = async() => {
-    //     let accessToken = await giveMeAccessKey()
-    //     let productsUrl = `${"https://api.kroger.com"}/v1/products?filter.term=${"milk"}`;
-
-    //     let productsResponse = await fetch(productsUrl, {
-    //         method: "GET",
-    //         cache: "no-cache",
-    //         headers: {
-    //             Authorization: `bearer ${accessToken}`,
-    //             "Content-Type": "application/json; charset=utf-8"
-    //         }
-    //         .then(response => response.json())
-    //         .then(data => console.log(data))
-    //         .catch(error => console.log(error))
-            
-    //     })
-    //     }
-        
-    return (
-        <div className='container_products'>
-                
+const Products = () => {
+  /* Traemos del context la funcion para agregar un producto */
+  const { AddItemToCart } = useContext(CartContext);
+  
+  return (
+    <div className={styles.productsContainer}>
+      
+      
+      {ProductsData.map((product, i) => (
+        <div key={i} className={styles.product}>
+          <img src={product.img} alt={product.name} />
+          <div>
+            <p>
+              {product.name} - ${product.price}
+            </p>
+          </div>
+          <button onClick={() => AddItemToCart(product)}>Add to Cart</button>
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
+
 export default Products;

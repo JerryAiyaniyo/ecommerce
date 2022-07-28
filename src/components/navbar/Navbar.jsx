@@ -3,6 +3,7 @@ import './navbar.scss';
 import logo from '../../assets/Images/dillons-logo.png';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
+import Cart from '../CartIcon/Cart'
 
 function Navbar(cartItem) {
 
@@ -22,10 +23,13 @@ function Navbar(cartItem) {
           <img src={logo} alt="Logo" width="100vw" />
         </a>
         <div className="cart">
-          <Link to="/cart">
+          <Cart/>
+
+
+          {/* <Link to="/cart">
             <FaShoppingCart className="btn-cart" />
             <b><span className="number-cart">{cartItem.length === {} ? "" : cartItem.length}</span></b>
-          </Link>
+          </Link> */}
         </div>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
