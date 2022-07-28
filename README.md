@@ -84,10 +84,13 @@ the Dillons online supermarket project, was entrusted to the Alt-F4 team for its
 
 
 ## Used tools
-React,
-Javascript,
-Bootstrap,
-scass,
+React
+
+Javascript
+
+Bootstrap
+
+scass
 
 ### For more information 
 
@@ -95,13 +98,21 @@ Check the github link https://github.com/daliauv1/ecommerce
 
 ### Team
 
-Adrian Suñé, 
-Dalia Utani,
-Jerry Aiyaniyo,
-Guillem Martínez,
-Alejandra Naranjo,
-Gary Limon,
-Simo Bernnich,
-Eberth Castro,
-Erick Crespin,
+Adrian Suñé 
+
+Dalia Utani
+
+Jerry Aiyaniyo
+
+Guillem Martínez
+
+Alejandra Naranjo
+
+Gary Limon
+
+Simo Bernnich
+
+Eberth Castro
+
+Erick Crespin
 
