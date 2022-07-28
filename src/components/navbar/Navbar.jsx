@@ -33,7 +33,6 @@ function Navbar(cartItem) {
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorías
               </a>
-<<<<<<< HEAD
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <Link to="/oil">
@@ -51,17 +50,6 @@ function Navbar(cartItem) {
                       Agua y refrescos
                     </a>
                   </Link>
-=======
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-bottle-droplet"></i>
-                  Aceite, especias y salsas</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-bottle-water"></i>
-                  Agua y refrescos</a>
->>>>>>> 009b9682c6d584e6717a7d193a20b88db86e729f
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
                 <li><a className="dropdown-item" href="#">
