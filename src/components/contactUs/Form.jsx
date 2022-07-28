@@ -6,8 +6,8 @@ import './form.scss'
 
 
 function Form(){
-  const form = useRef();
 
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,6 +19,9 @@ function Form(){
           console.log(error.text);
       });
       e.target.reset()
+     
+
+
   };
 
 
