@@ -6,6 +6,10 @@ import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar(cartItem) {
 
+  const refreshPage = () => {
+    window.location.reload();
+  }
+
   return (
     <nav id="navbar" className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
@@ -33,135 +37,96 @@ function Navbar(cartItem) {
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Categorías
               </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-bottle-droplet"></i>
-                  Aceite, especias y salsas</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li onClick={refreshPage}>
+                  <Link to="/oil" >
+                    <a class="dropdown-item" href="#"  >
+                      <i class="fa-solid fa-bottle-droplet"></i>
+                      Aceite, especias y salsas
+                    </a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-bottle-water"></i>
-                  Agua y refrescos</a>
+                <li onClick={refreshPage}>
+                  <Link to="/snacks">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-cookie"></i>
+                      Aperitivos
+                    </a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-cookie"></i>
-                  Aperitivos</a>
+                <li onClick={refreshPage}>
+                  <Link to="/candy">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-candy-cane"></i>
+                      Azúcar, caramelos y chocolate
+                    </a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-bowl-rice"></i>
-                  Arroz, legumbres y pasta</a>
+                <li onClick={refreshPage}>
+                  <Link to="/cereals">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-wheat-awn"></i>
+                      Cereales y galletas</a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-candy-cane"></i>
-                  Azúcar, caramelos y chocolate</a>
+                <li onClick={refreshPage}>
+                  <Link to="/cheese">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-cheese"></i>
+                      Charcutería y quesos</a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-baby-carriage"></i>
-                  Bebé</a>
+                <li onClick={refreshPage}>
+                  <Link to="/soup">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-jar"></i>
+                      Conservas, caldos y cremas</a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-wine-glass"></i>
-                  Bodega</a>
+                <li onClick={refreshPage}>
+                  <Link to="/pharmacy">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-prescription-bottle-medical"></i>
+                      Fitoterapia y parafarmacia</a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-mug-hot"></i>
-                  Cacao, café e infusiones</a>
+                <li onClick={refreshPage}>
+                  <Link to="/milk">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-egg"></i>
+                      Huevos, leche y mantequilla</a>
+                  </Link>
+                </li>
+                <li ><hr className="dropdown-divider"></hr></li>
+                <li onClick={refreshPage}>
+                  <Link to="/cake">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-cake-candles"></i>
+                      Panadería y pastelería</a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-bacon"></i>
-                  Carne</a>
+                <li onClick={refreshPage}>
+                  <Link to="/pizza">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-pizza-slice"></i>
+                      Pizzas y platos preparados</a>
+                  </Link>
                 </li>
                 <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-wheat-awn"></i>
-                  Cereales y galletas</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-cheese"></i>
-                  Charcutería y quesos</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-icicles"></i>
-                  Congelados</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-jar"></i>
-                  Conservas, caldos y cremas</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-shower"></i>
-                  Cuidado del cabello</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-spray-can-sparkles"></i>
-                  Cuidado facial y corporal</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-prescription-bottle-medical"></i>
-                  Fitoterapia y parafarmacia</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-apple-whole"></i>
-                  Fruta y verdura</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-egg"></i>
-                  Huevos, leche y mantequilla</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-broom"></i>
-                  Limpieza y hogar</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-mars-stroke-up"></i>
-                  Maquillaje</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-fish"></i>
-                  Marisco y pescado</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-paw"></i>
-                  Mascotas</a></li>
-                <li><hr className="dropdown-divider"></hr>
-                </li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-cake-candles"></i>
-                  Panadería y pastelería</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-pizza-slice"></i>
-                  Pizzas y platos preparados</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-ice-cream"></i>
-                  Postres y yogures</a>
-                </li>
-                <li><hr className="dropdown-divider"></hr></li>
-                <li><a className="dropdown-item" href="#">
-                  <i className="fa-solid fa-whiskey-glass"></i>
-                  Zumos</a>
+                <li onClick={refreshPage}>
+                  <Link to="/juice">
+                    <a className="dropdown-item" href="#">
+                      <i className="fa-solid fa-whiskey-glass"></i>
+                      Zumos</a>
+                  </Link>
                 </li>
               </ul>
             </li>
