@@ -75,15 +75,16 @@ the Dillons online supermarket project, was entrusted to the Alt-F4 team for its
 
 ## The Dyllons Project
 
+
+<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.11.png" width="150" ><img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.24.png" width="150">
+<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.36.png" width="150">
+<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.51.png" width="150">
+<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.15.03.png" width="150">
+<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2020.35.27.png" width="150">
+
+
+
 <img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2014.56.41.png" width="350"> <img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2014.57.02.png" width="350"> 
 <img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2014.57.14.png" width="350">
 <img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.13.16.png" width="350">
 <img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.13.30.png" width="350">
-
-
-<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.11.png" width="350" ><img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.24.png" width="350">
-<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.36.png" width="350">
-<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.14.51.png" width="350">
-<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2019.15.03.png" width="350">
-<img src="https://github.com/daliauv1/ecommerce/blob/main/src/assets/Images/Captura%20de%20Pantalla%202022-07-28%20a%20las%2020.35.27.png" width="350">
-
