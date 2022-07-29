@@ -14,8 +14,11 @@ the Dillons online supermarket project, was entrusted to the Alt-F4 team for its
 
 ## Used tools
 React
+
 Install
+
 npm i
+
 npm i react-router-dom
 
 In the project directory, you can run:
@@ -25,9 +28,11 @@ In the project directory, you can run:
 Javascript
 
 Bootstrap
+
 npm install bootstrap
 
 scss
+
 npm i sass
 
 ### For more information 
