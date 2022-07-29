@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ItemCart } from "../itemCart/ItemCart";
 import CartContext from "../context/CartContext";
-import styles from '../CartIcon/cart.scss'
+import styles from '../CartIcon/styles.module.scss'
 
 const Cart = () => {
   /* Creamos 2 estados, uno para ver si el carrito esta abierto o no 
@@ -21,7 +21,7 @@ const Cart = () => {
 
   /* Obtenemos el precio total */
   const total = cartItems.reduce(
-    (previous, current) => previous + current.amount * current.price,
+    (previous, current) => previous + current.amount * current.precio,
     0
   );
 
@@ -37,7 +37,7 @@ const Cart = () => {
               className={styles.open}
               width={"35px"}
               viewBox="0 0 30 27"
-              fill="none"
+              fill="ffffff"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -75,7 +75,7 @@ const Cart = () => {
 
       {cartItems && cartOpen && (
         <div className={styles.cart}>
-          <h2>Tu carrito</h2>
+          <h2 >Tu carrito</h2>
 
           {cartItems.length === 0 ? (
             <p className={styles.cartVacio}>Tu carrito esta vacio</p>

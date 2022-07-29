@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef,useContext} from 'react';
 import CartContext from "../components/context/CartContext";
-import '../container/Cards/card.scss'
+import './displayData.scss';
 
 function DisplayData(props) {
     const { AddItemToCart } = useContext(CartContext);
@@ -17,7 +17,7 @@ function DisplayData(props) {
                             <div className="card-body">
                                 <h5 className="card-title">{productItems.description}</h5>
                                 <p className="card-text1">1 ud.</p>
-                                <button onClick={() => AddItemToCart(productItems)}>Add to cart</button>                                
+                                <button onClick={() => AddItemToCart(productItems)} className="add-btn">Add to cart</button>                                
                             </div>
                         </div>
 
