@@ -94,4 +94,27 @@
     background-color: #797979;
     border-radius: 20px;
   }
-  
+
+  @media screen and (max-width: 375px) {
+    .cart{
+      margin-top:-50px;
+    }
+    .buttonCart{
+      margin-top:-20px;
+      margin-right:20px;
+    }
+    .cart {
+      position: absolute;
+      top:0px;
+      left:20px;
+      width: 400px;
+      background-color:var(--primary-color);
+      color: white;
+      padding:3vh;
+      transition:0.5s;
+      z-index:10;}
+    .productsNumber{
+      margin-top:-20px;
+      margin-right:20px;
+    }
+  }
