@@ -131,9 +131,7 @@ function Navbar(cartItem) {
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
-              <Link to="/cart"><a className="nav-link" href="#">Mis pedidos</a></Link>
-            </li>
+
             <li className="nav-item">
               <Link to="/support" ><a className="nav-link" href="#">Atención al cliente</a></Link>
             </li>
